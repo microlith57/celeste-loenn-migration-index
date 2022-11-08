@@ -48,12 +48,6 @@
       >max480's Celeste Custom Entity and Trigger List</a
     >, so it updates when that updates.
   </p>
-  <p>
-    <strong>Warning:</strong> max480's website is currently set up to deny
-    cross-origin requests, so you will need an extension that adds the
-    <code>Access-Control-Allow-Origin: *</code> header to the responses in order
-    for this page to work.
-  </p>
 
   {#await promise}
     <p class="loading">Loading...</p>
@@ -67,15 +61,6 @@
       Trigger List:
     </h3>
     <pre><code style="color: red">{error.message}</code></pre>
-    {#if error.message.startsWith("NetworkError")}
-      <p>
-        <strong
-          >It is likely that this error is due to a missing <code
-            >Access-Control-Allow-Origin</code
-          > header. This can be fixed by installing an extension to add this header.
-        </strong>
-      </p>
-    {/if}
   {/await}
 </main>
 
