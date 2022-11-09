@@ -26,7 +26,7 @@
       let catalog = await res.json();
       let mods = catalog.modInfo;
       let helpers = mods.filter(
-        (mod) => mod.categoryName == "Helper" && hasUnconvertedPlugin(mod)
+        (mod) => mod.categoryName != "Map" && hasUnconvertedPlugin(mod)
       );
       return helpers;
     } else {
@@ -39,7 +39,7 @@
   <h1>Celeste Lönn Migration Index</h1>
 
   <p>
-    This is a list of all Celeste helpers that still have unmigrated plugins
+    This is a list of all Celeste helpers (all mods that aren't categorised as maps) that still have unmigrated plugins
     (that is, they have Ahorn plugins without corresponding Lönn plugins).
   </p>
   <p>
