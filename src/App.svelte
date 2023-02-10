@@ -6,13 +6,22 @@
   function hasUnconvertedPlugin(mod) {
     return (
       Object.values(mod.entityList).some(
-        (plugins) => plugins.includes("ahorn") && !plugins.includes("loenn")
+        (plugins) =>
+          plugins.includes("ahorn") &&
+          !plugins.includes("loenn") &&
+          !plugins.includes("mlp")
       ) ||
       Object.values(mod.triggerList).some(
-        (plugins) => plugins.includes("ahorn") && !plugins.includes("loenn")
+        (plugins) =>
+          plugins.includes("ahorn") &&
+          !plugins.includes("loenn") &&
+          !plugins.includes("mlp")
       ) ||
       Object.values(mod.effectList).some(
-        (plugins) => plugins.includes("ahorn") && !plugins.includes("loenn")
+        (plugins) =>
+          plugins.includes("ahorn") &&
+          !plugins.includes("loenn") &&
+          !plugins.includes("mlp")
       )
     );
   }
@@ -39,8 +48,12 @@
   <h1>Celeste Lönn Migration Index</h1>
 
   <p>
-    This is a list of all Celeste helpers (all mods that aren't categorised as maps) that still have unmigrated plugins
-    (that is, they have Ahorn plugins without corresponding Lönn plugins).
+    This is a list of all Celeste helpers (all mods that aren't categorised as
+    maps) that still have unmigrated plugins (that is, they have Ahorn plugins
+    without corresponding Lönn plugins).
+    <br />
+    Note that some mods' Lönn support is provided through the
+    <a href="https://gamebanana.com/tools/12000">More Lönn Plugins</a> plugin.
   </p>
   <p>
     This list is generated automatically (each time you load the page) from <a

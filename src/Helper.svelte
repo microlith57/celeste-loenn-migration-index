@@ -7,7 +7,8 @@
       if (
         Object.hasOwnProperty.call(mod.entityList, key) &&
         mod.entityList[key].includes("ahorn") &&
-        !mod.entityList[key].includes("loenn")
+        !mod.entityList[key].includes("loenn") &&
+        !mod.entityList[key].includes("mlp")
       ) {
         entities.push(key);
       }
@@ -22,7 +23,8 @@
       if (
         Object.hasOwnProperty.call(mod.triggerList, key) &&
         mod.triggerList[key].includes("ahorn") &&
-        !mod.triggerList[key].includes("loenn")
+        !mod.triggerList[key].includes("loenn") &&
+        !mod.triggerList[key].includes("mlp")
       ) {
         triggers.push(key);
       }
@@ -37,7 +39,8 @@
       if (
         Object.hasOwnProperty.call(mod.effectList, key) &&
         mod.effectList[key].includes("ahorn") &&
-        !mod.effectList[key].includes("loenn")
+        !mod.effectList[key].includes("loenn") &&
+        !mod.effectList[key].includes("mlp")
       ) {
         effects.push(key);
       }
