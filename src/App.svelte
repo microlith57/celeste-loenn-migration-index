@@ -28,7 +28,7 @@
 
   async function getUnmigratedHelpers() {
     const res = await fetch(
-      `https://max480.ovh/celeste/custom-entity-catalog.json`
+      `https://maddie480.ovh/celeste/custom-entity-catalog.json`
     );
 
     if (res.ok) {
@@ -57,8 +57,8 @@
   </p>
   <p>
     This list is generated automatically (each time you load the page) from <a
-      href="https://max480.ovh/celeste/custom-entity-catalog"
-      >max480's Celeste Custom Entity and Trigger List</a
+      href="https://maddie480.ovh/celeste/custom-entity-catalog"
+      >maddie480's Celeste Custom Entity and Trigger List</a
     >, so it updates when that updates.
   </p>
 
